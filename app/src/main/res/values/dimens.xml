@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_left_margin_collapsed">16dp</dimen>
+    <dimen name="image_left_margin_collapsed2">45dp</dimen>
+    <dimen name="image_top_margin_collapsed">9dp</dimen>
+    <dimen name="title_left_margin_collapsed">55dp</dimen>
+    <dimen name="title_left_margin_collapsed2">80dp</dimen>
+    <dimen name="title_top_margin_collapsed">17dp</dimen>
+    <dimen name="subtitle_left_margin_collapsed">65dp</dimen>
+    <dimen name="subtitle_left_margin_collapsed2">80dp</dimen>
+    <dimen name="follow_left_margin_collapsed">235dp</dimen>
+    <dimen name="follow_top_margin_collapsed">14dp</dimen>
+    <dimen name="subtitle_top_margin_collapsed">-70dp</dimen>
+    <dimen name="layout_left_margin_collapsed">150dp</dimen>
+    <dimen name="layout_top_margin_collapsed">60dp</dimen>
+    <dimen name="details_left_margin_collapsed">150dp</dimen>
+    <dimen name="detasils_top_margin_collapsed">70dp</dimen>
+
+</resources>

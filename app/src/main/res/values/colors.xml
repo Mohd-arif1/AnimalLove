@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blur">#d1212121</color>
+    <color name="blur3">#bd2b2b2b</color>
+    <color name="blur4">#8d353535</color>
+    <color name="blur2">#58545454</color>
+    <color name="blur1">#87545454</color>
+    <color name="blur0">#00ffffff</color>
+</resources>

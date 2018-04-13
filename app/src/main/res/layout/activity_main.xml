@@ -1,0 +1,150 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpUsage">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.dev.arif.collapseimagetransitions.CollapsingImageTransition
+            android:id="@+id/collapsing_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:minHeight="?attr/actionBarSize"
+            android:smoothScrollbar="true"
+            android:scrollingCache="false"
+            android:animationCache="false"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:minHeight="132dp"
+                android:src="@drawable/arifprofile"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop" />
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+
+            <RelativeLayout
+                android:id="@+id/detaillayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#ffffff"
+                android:paddingBottom="10dp"
+                android:layout_gravity="bottom|center_horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginEnd="10dp"
+                    android:maxLines="2"
+                    android:text="I am not speeding, I am qulifying."
+                    android:ellipsize="end"
+                    android:maxLength="100"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="#212121"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilepic"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="60dp"
+                android:src="@drawable/arifcover"
+                android:layout_marginStart="10dp"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#ffffff"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="75dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginEnd="25dp"
+                android:maxLines="1"
+                android:text="@string/title"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:maxLength="20"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:gravity="start" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="55dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginEnd="25dp"
+                android:maxLines="1"
+                android:text="@string/subtitle"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:gravity="start" />
+
+            <TextView
+                android:id="@+id/totallikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="138dp"
+                android:layout_marginStart="300dp"
+                android:gravity="start"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/likesimage"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="137dp"
+                android:layout_marginStart="275dp"
+            />
+
+        </com.dev.arif.collapseimagetransitions.CollapsingImageTransition>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/sliding_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"
+            android:background="#ffffff"
+            app:tabTextColor="#3e3e3e"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bbffffff"
+    tools:fragment="com.cncoding.teazer.ui.fragment.activity.OpenProfilePicActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/userimage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/close"
+            android:padding="2dp"
+            android:src="@drawable/ic_close_black_24dp"
+            android:layout_margin="10dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/media_controller"
+            android:transitionName="profile"
+            android:padding="2dp"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp">
+
+        <!--<TextView-->
+            <!--android:id="@+id/remove_image_btn"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Cancel"-->
+            <!--android:paddingStart="14dp"-->
+            <!--android:paddingEnd="14dp"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:background="@color/colorAccent"-->
+            <!--/>-->
+
+
+    </RelativeLayout>
+</RelativeLayout>
